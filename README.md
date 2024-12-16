@@ -8,6 +8,7 @@ $ git init
 $ git remote add origin \<link with .git>
 
 
+
 ## commit 
 ### add file for commit 
 $ git add README.md
@@ -27,6 +28,10 @@ $ git branch -d \<name>
 
 ### pull branch from remote git
 $ git pull origin \<branch>
+
+### switch to another branch
+$ git switch \<branch>
+
 
 
 ## pull request 
