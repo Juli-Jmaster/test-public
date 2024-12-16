@@ -5,7 +5,7 @@
 $ git init
 
 ### link to remote git
-$ git remote add origin https://github.com/Juli-Jmaster/SJJRobotics24-25.git
+$ git remote add origin \<link with .git>
 
 
 ## commit 
