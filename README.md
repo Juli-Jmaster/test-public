@@ -32,7 +32,8 @@ $ git pull origin \<branch>
 ### switch to another branch
 $ git switch \<branch>
 
-
+### push to branch online
+$ git push -u origin \<branch>
 
 ## pull request 
 ### create pull request 
