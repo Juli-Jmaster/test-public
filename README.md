@@ -1,10 +1,10 @@
 # test-public
 
-# init
-### create git in the computer system 
+## init
+ **create git in the computer system**
 $ git init
 
-### link to remote git
+**link to remote git**
 $ git remote add origin \<link with .git>
 
 
@@ -12,41 +12,41 @@ $ git remote add origin \<link with .git>
 
 
 ## commit 
-### add file for commit 
+**add file for commit**
 $ git add README.md
 
-### commit
+**commit**
 $ git commit -m "first commit"
 
-### list files commiting
+**list files commiting**
 $ git diff HEAD --name-only
 
 
 ## branch 
-### make main branch
+**make main branch**
 $ git branch -M \<name>
 
-### make branch
+**make branch**
 $ git branch \<name>
 
-### delete branch
+**delete branch**
 $ git branch -d \<name>
 
-### pull branch from remote git
+**pull branch from remote git**
 $ git pull origin \<branch>
 
-### switch to another branch
+**switch to another branch**
 $ git switch \<branch>
 
-### push to branch online
+**push to branch online**
 $ git push -u origin \<branch>
 
 ## pull request 
-### create pull request 
+**create pull request**
 $ gh pr create --base \<main branch(to)> --head \<commit branch(from)> --title "\<title>" --body "\<body>"
 
-### squash merge request approve
+**squash merge request approve**
 $ gh pr merge -s \<request number>
 
-### merge request approve
-$ gh pr merge -s \<request number>
+**merge request approve**
+$ gh pr merge \<request number>
