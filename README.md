@@ -18,6 +18,8 @@ $ git stash show \<number> --name-only
 **turn stash into branch**\
 $ git stash branch \<branch> \<number>
 
+**save stash with name**\
+$ git stash save \<name>
 
 ## commit 
 **add file for commit**\
