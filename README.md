@@ -9,6 +9,14 @@ $ git remote add origin \<link with .git>
 
 
 ## stash
+**show all stashes**\
+$ git stash list
+
+**show fies in stash**\
+$ git stash show \<number> --name-only
+
+**turn stash into branch**\
+$ git stash branch \<branch> \<number>
 
 
 ## commit 
