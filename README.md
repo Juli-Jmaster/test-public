@@ -8,6 +8,8 @@ $ git init
 $ git remote add origin \<link with .git>
 
 
+## stash
+
 
 ## commit 
 ### add file for commit 
@@ -15,6 +17,10 @@ $ git add README.md
 
 ### commit
 $ git commit -m "first commit"
+
+### list files commiting
+$ git diff HEAD --name-only
+
 
 ## branch 
 ### make main branch
