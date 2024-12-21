@@ -49,7 +49,15 @@ $ git pull origin \<branch>
 $ git switch \<branch>
 
 **push to branch online**\
+adds a "(#1)" to the name at end
 $ git push -u origin \<branch>
+
+**push to branch online**\
+$ git push origin \<branch>
+
+**put the HEAD to a branch and push online**\
+$ git push origin HEAD:\<branch>
+
 
 ## pull request 
 **create pull request**\
@@ -60,3 +68,4 @@ $ gh pr merge -s \<request number>
 
 **merge request approve**\
 $ gh pr merge \<request number>
+
