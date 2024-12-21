@@ -48,6 +48,9 @@ $ git pull origin \<branch>
 **switch to another branch**\
 $ git switch \<branch>
 
+**switch or go back to commit**
+$ git switch \<COMMIT_ID> --detach
+
 **push to branch online**\
 adds a "(#1)" to the name at end
 $ git push -u origin \<branch>
