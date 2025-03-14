@@ -74,7 +74,7 @@ $ gh pr merge \<request number>
 
 
 ## other
-** push changes from one branch to another**
+**push changes from one branch to another**\
 get short commit ID changes and go to the branch want to push them to 
 $ git reset --hard \<CommitIDShort>
 
