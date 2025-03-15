@@ -28,6 +28,9 @@ $ git add README.md
 **commit**\
 $ git commit -m "first commit"
 
+**signed commit**\
+$ git commit -S -m "first commit"
+
 **list files commiting**\
 $ git diff HEAD --name-only
 
@@ -73,8 +76,33 @@ $ gh pr merge -s \<request number>
 $ gh pr merge \<request number>
 
 
+## gpg
+**generate gpg key**\
+$ gpg --full-generate-key\
+RSA and RSA\
+real name = username\
+email = email
+
+**getting gpg key and subkeys**\
+$ gpg --list-secret-keys --keyid-format LONG
+
+**using signing key**\
+$ git config user.signingkey \<YOUR_GPG_KEY_ID> or <YOUR_GPG_SUBKEYS>
+
+**import public key to github settings**\
+$ gpg --armor --export \<email>
+
+**using gpg other device**\
+$ gpg --armor --export \[email] >> public.asc\
+$ gpg --armor --export-secret-keys \[email] >> private.asc\
+$ gpg --import public.asc\
+$ gpg --import private.asc
+
+
 ## other
 **push changes from one branch to another**\
 get short commit ID changes and go to the branch want to push them to\
 $ git reset --hard \<CommitIDShort>
+
+
 
