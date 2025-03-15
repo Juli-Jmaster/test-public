@@ -82,6 +82,7 @@ $ gpg --full-generate-key\
 RSA and RSA\
 real name = username\
 email = email
+pwd = gitH@sK1
 
 **getting gpg key and subkeys**\
 $ gpg --list-secret-keys --keyid-format LONG
