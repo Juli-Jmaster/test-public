@@ -105,5 +105,7 @@ $ gpg --import private.asc
 get short commit ID changes and go to the branch want to push them to\
 $ git reset --hard \<CommitIDShort>
 
+**show commits on branch**\
+$ git log --pretty=format:"%h: %s %n%an, %ar %n%G?: %GK - %GS%n"
 
 
