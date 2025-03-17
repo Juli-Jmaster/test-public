@@ -99,6 +99,9 @@ $ gpg --armor --export-secret-keys \[email] >> private.asc\
 $ gpg --import public.asc\
 $ gpg --import private.asc
 
+**deleting gpg key**\
+$ gpg --delete-secret-key \<uid>\
+$ gpg --delete-key \<uid>
 
 ## other
 **push changes from one branch to another**\
