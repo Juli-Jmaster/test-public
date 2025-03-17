@@ -88,10 +88,10 @@ pwd = gitH@sK1
 $ gpg --list-secret-keys --keyid-format LONG
 
 **using signing key**\
-$ git config user.signingkey \<YOUR_GPG_KEY_ID> or <YOUR_GPG_SUBKEYS>
+$ git config user.signingkey \<gpg_uid sec> OR \<gpg_subkeys ssb>
 
 **import public key to github settings**\
-$ gpg --armor --export \<email>
+$ gpg --armor --export \<email> OR \<uid>
 
 **using gpg other device**\
 $ gpg --armor --export \[email] >> public.asc\
