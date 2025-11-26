@@ -111,4 +111,6 @@ $ git reset --hard \<CommitIDShort>
 **show commits on branch**\
 $ git log --pretty=format:"%h: %s %n%an, %ar %n%G?: %GK - %GS%n"
 
-
+## update
+**update windows**\
+$ git update-git-for-windows
