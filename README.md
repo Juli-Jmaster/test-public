@@ -114,3 +114,27 @@ $ git log --pretty=format:"%h: %s %n%an, %ar %n%G?: %GK - %GS%n"
 ## update
 **update windows**\
 $ git update-git-for-windows
+
+
+##FIX
+Creating Stashes
+git stash — Saves tracked uncommitted changes and resets the working directory.
+git stash push -m "message" — Saves changes with a specific descriptive label.
+git stash -u — Saves tracked changes along with any brand new untracked files.
+git stash -a — Saves everything including untracked and completely ignored files.
+git stash -p — Opens an interactive menu to choose specific changes block-by-block.
+
+Listing & Inspecting Stashesgit stash list — Shows all saved stashes with their corresponding stash@{index} identifiers.
+git stash show — Displays a file diff summary for your most recent stash entry.
+git stash show -p — Shows the full layout of the code changes inside the latest stash.
+git stash show stash@{2} -p — Shows the full detailed code diff for a specific older index.
+
+Applying & Restoring Stashesgit stash pop — Restores the latest changes and permanently removes them from the stack.
+git stash pop stash@{1} — Restores a targeted stash index and removes it from the list.
+git stash apply — Restores the latest changes but keeps them safely backed up in the list.
+git stash apply stash@{2} — Restores a targeted index but keeps it safely inside the list.
+git stash branch <name> — Builds a brand new branch and instantly applies your latest stash to it.
+
+Cleaning & Deleting Stashesgit stash drop — Permanently deletes the most recent stash entry from your stack.
+git stash drop stash@{3} — Permanently deletes one specific targeted stash entry from your list.
+git stash clear — Destroys every single stash entry
